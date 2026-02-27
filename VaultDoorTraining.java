@@ -6,7 +6,7 @@ class VaultDoorTraining {
         Scanner scanner = new Scanner(System.in); 
         System.out.print("Enter vault password: ");
         String userInput = scanner.next();
-	String input = userInput.substring("picoCTF{".length(),userInput.length()-1);
+	String input = userInput.substring("Blackbox{".length(),userInput.length()-1);
 	if (vaultDoor.checkPassword(input)) {
 	    System.out.println("Access granted.");
 	} else {
@@ -21,6 +21,6 @@ class VaultDoorTraining {
     //
     // -Minion #9567
     public boolean checkPassword(String password) {
-        return password.equals("w4rm1ng_Up_w1tH_jAv4_0009yrGMeEp");
+        return password.equals("TH3_0N3_15_Y0U");
     }
 }
